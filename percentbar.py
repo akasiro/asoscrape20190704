@@ -20,10 +20,11 @@ def report_progress(fenzi):
     sys.stdout.write(buf)
     sys.stdout.write('\r')
     sys.stdout.flush()
-while True:
+
+while getfenzi()<len(txt2list(os.path.join('input', os.listdir('input')[0]))):
     report_progress(getfenzi())
     time.sleep(0.1)
-
+sys.stdout.write('\nMission completed')
 
 
 
